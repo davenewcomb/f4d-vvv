@@ -1,0 +1,20 @@
+---
+sites:
+
+  # provides a default installation of the latest version of WordPress
+  wordpress-default:
+    repo: https://github.com/Varying-Vagrant-Vagrants/vvv-wordpress-default.git
+    hosts:
+      - local.wordpress.dev
+
+  wp_baycare:
+    hosts:
+      - baycare.dev
+
+
+utilities:
+  core:
+    - memcached-admin
+    - opcache-status
+    - phpmyadmin
+    - webgrind
